@@ -9,6 +9,7 @@ WORKDIR /opt
 # 任意のversionをinstall
 # -b -p インタラクティブ操作を回避
 # /opt/anaconda3　インストール先
+# version変えたい時などpullしてくるlink先だけ変えれば、Docker imageを作成できる
 RUN wget https://repo.continuum.io/archive/Anaconda3-2020.02-Linux-x86_64.sh && \
 	sh Anaconda3-2020.02-Linux-x86_64.sh -b -p /opt/anaconda3 && \
 	# インストール後必要ないから削除
