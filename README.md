@@ -3,8 +3,8 @@
 - Dokcerfile作成メモ 
 
 ## index
-- [1.create build image](1.create build image)
-- [2.when docker-compose](2.when docker-compose)
+- [1.create build image](#1.create build image)
+- [2.when docker-compose](#2.when docker-compose)
 
 ## 1.create build image
 ```
