@@ -1,12 +1,15 @@
-# docker learn
+# pandas memo
+## directory structure
+-  ds_python/ : doc file
+
 ## sample Dockerfle jupyter lab
 - Dokcerfile作成メモ 
 
 ## index
-- [1.create build image](#1.create build image)
-- [2.when docker-compose](#2.when docker-compose)
+- [1.Dockerfile](#1.Dockerfile)
+- [2.when docker-compose](#2.docker-compose)
 
-## 1.create build image
+## 1.Dockerfile
 ```
 $ docker build -t jupyter_lab:latest .
 ```
@@ -38,7 +41,7 @@ $ docker exec -it my-lab bash
 $ docker down <container name>
 ```
 
-## 2.when docker-compose
+## 2.docker-compose
 
 - In the working directory `Dockerfile`, `docker-compose.yml`
 ```
