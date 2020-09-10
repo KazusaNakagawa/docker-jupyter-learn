@@ -2,24 +2,23 @@
 ## directory structure
 -  ds_python/ : doc file
 
-## sample Dockerfle jupyter lab
-- Dokcerfile作成メモ 
+## sample Dockerfle (jupyter lab)
 
-## index
-- [1.Dockerfile](#1.Dockerfile)
-- [2.when docker-compose](#2.docker-compose)
+### index
+- [1.Dockerfile](#1dockerfile)
+- [2.when docker-compose](#2docker-compose)
 
-## 1.Dockerfile
+### 1.Dockerfile
 ```
 $ docker build -t jupyter_lab:latest .
 ```
 
-## コンテナ作成 with マウント
+### コンテナ作成 with マウント
 ```
 $ docker run -p 8888:8888 -v <host path>:<local path> --name my-lab jupyter_lab
 ```
 
-## 操作コマンドメモ
+### 操作コマンドメモ
 - コンテナ停止
 ```
 $ docker stop my-lab
@@ -41,7 +40,7 @@ $ docker exec -it my-lab bash
 $ docker down <container name>
 ```
 
-## 2.docker-compose
+### 2.docker-compose
 
 - In the working directory `Dockerfile`, `docker-compose.yml`
 ```
