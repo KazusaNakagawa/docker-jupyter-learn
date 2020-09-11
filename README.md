@@ -6,7 +6,7 @@
 
 ### index
 - [1.Dockerfile](#1dockerfile)
-- [2.when docker-compose](#2docker-compose)
+- [2.docker-compose](#2docker-compose)
 
 ### 1.Dockerfile
 ```
