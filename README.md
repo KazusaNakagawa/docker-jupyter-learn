@@ -68,6 +68,20 @@ $ dokcer-compose start
 $ docker-compose exec web bash
 ```
 
+### 3.M1 Mac
+
+#### option (--platform linux/amd64) つけて実行
+
+```bash
+$ docker build --platform linux/amd64 -t jupyter_lab:latest .
+```
+
+#### mount
+```bash
+$ docker run -p 8888:8888 -v <host path>:<local path> --name my-lab jupyter_lab
+```
+
+
 ## browser accsess
 http://localhost:8888/
 
