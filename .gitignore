@@ -1,5 +1,6 @@
 .idea/
 .ipynb_checkpoints/
+ds_python/work/kaggle-book/
 
 # tar file
 *.tar
