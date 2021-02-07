@@ -5,14 +5,12 @@ services:
     build: .
     ports:
       - '8888:8888'
+    # TODO: M1用に使用したいが。。。
+    # platform: linux/amd64
       
     # mount先指定
     volumes:
       - '.:/work'
-    # environment:
-    #   SECRET_KEY: '{my_secret_key}'
-    #   ALLOWED_HOSTS: '0.0.0.0 localhost'
-    #   DATABASE_ENGINE: 'django.db.backends.sqlite3'
 
     # -it command
     tty: true # -t
