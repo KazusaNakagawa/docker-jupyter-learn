@@ -1,5 +1,10 @@
+.idea/
 .ipynb_checkpoints/
-kaggle/
 
+kaggle/
 # tar file
 *.tar
+ds_python/work/kaggle-book/
+
+.DS_Store
+
