@@ -82,6 +82,10 @@ $ docker build --platform linux/amd64 -t jupyter_lab:latest .
 $ docker run -p 8888:8888 -v <host path>:<local path> --name my-lab jupyter_lab
 ```
 
+#### 再度入る
+```
+$ docker start <container name>
+```
 
 ## browser accsess
 http://localhost:8888/
