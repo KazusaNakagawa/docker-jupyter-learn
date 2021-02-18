@@ -16,7 +16,7 @@ $ docker build -t jupyter_lab:latest .
 
 ### コンテナ作成 with マウント
 ```
-$ docker run -p 8888:8888 -v <host path>:<local path> --name my-lab jupyter_lab
+$ docker run -p 8888:8888 -v <host path>:<container path> --name my-lab jupyter_lab
 ```
 
 ### 操作コマンドメモ
@@ -79,7 +79,7 @@ $ docker build --platform linux/amd64 -t jupyter_lab:latest .
 
 #### mount
 ```bash
-$ docker run -p 8888:8888 -v <host path>:<local path> --name my-lab jupyter_lab
+$ docker run -p 8888:8888 -v <host path>:<container path> --name my-lab jupyter_lab
 ```
 
 #### 再度入る
