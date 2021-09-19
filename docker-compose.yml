@@ -2,11 +2,10 @@ version: '3'
 
 services:
   web:
+    platform: linux/amd64 # M1 Mac Support
     build: .
     ports:
       - '8888:8888'
-    # TODO: M1用に使用したいが。。。
-    # platform: linux/amd64
       
     # mount先指定
     volumes:
