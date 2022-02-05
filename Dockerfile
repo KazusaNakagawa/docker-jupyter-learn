@@ -1,8 +1,10 @@
 FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
-	sudo \
-	wget \
-	vim
+    ffmpeg \
+    libavcodec-extra \
+    sudo \
+    vim \
+    wget
 	
 # root権限意外でも扱えるようにする 共有サーバとか
 WORKDIR /opt
@@ -17,5 +19,11 @@ RUN wget https://repo.continuum.io/archive/$ANACOND_ARCHIVE && \
 ENV PATH /opt/anaconda3/bin:$PATH
 
 RUN pip install --upgrade pip
+
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
 WORKDIR /
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--LabApp.token=''"]
