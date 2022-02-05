@@ -1,10 +1,12 @@
 .idea/
 .ipynb_checkpoints/
-
-kaggle/
-# tar file
-*.tar
-ds_python/work/kaggle-book/
-
 .DS_Store
 
+*.tar
+*.mp3
+
+kaggle/
+ds_python/work/kaggle-book/
+
+# audio data
+audio2/
