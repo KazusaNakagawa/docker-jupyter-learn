@@ -1,6 +1,7 @@
 .idea/
 .ipynb_checkpoints/
 .DS_Store
+__pycache__/
 
 *.tar
 *.mp3
