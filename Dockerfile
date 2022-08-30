@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /opt
 
 # 任意のversionを変数に格納
-ENV ANACOND_ARCHIVE=Anaconda3-2021.05-Linux-x86_64.sh
+ENV ANACOND_ARCHIVE=Anaconda3-2022.05-Linux-x86_64.sh
 
 RUN wget https://repo.continuum.io/archive/$ANACOND_ARCHIVE && \
     sh $ANACOND_ARCHIVE -b -p /opt/anaconda3 && \
