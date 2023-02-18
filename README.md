@@ -5,7 +5,7 @@
 ## Docker create image & container 
 
 ```bash
-$ docker-compose up -d
+$ docker-compose up -d --build
 ```
 
 ## コンテナ内に bash で操作する時
