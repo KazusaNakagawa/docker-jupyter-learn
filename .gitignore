@@ -3,8 +3,12 @@
 .DS_Store
 __pycache__/
 
-*.tar
 *.mp3
+*.sql
+*.tar
+
+# environment
+.env
 
 kaggle/
 ds_python/work/kaggle-book/
