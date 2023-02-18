@@ -8,11 +8,20 @@
 $ docker-compose up -d --build
 ```
 
-## コンテナ内に bash で操作する時
+## go into docker container
 
 ```bash
+# web
 $ docker-compose exec web bash
 ```
+
+```bash
+# db
+$ docker-compose exec mariadb bash
+```
+
+## Sample file
+* `.env.sample`
 
 ## browser access
 
