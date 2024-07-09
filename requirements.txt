@@ -2,7 +2,7 @@ ffmpeg==1.4
 ipython-sql==0.4.1
 mysql-connector-python==8.0.32
 pydub==0.25.1
-PyMySQL==1.0.2
+PyMySQL==1.1.1
 python-dotenv==0.21.1
 SpeechRecognition==3.8.1
 sqlalchemy # SQLAlchemy @ file:///tmp/build/80754af9/sqlalchemy_1647581680159/work
